@@ -56,7 +56,7 @@ def get_favorite_song_features(song_name):
     filtered_spotify_data = spotify_data.dropna(subset=['song_name'])
     song_name_lower = song_name.lower()
     matching_song = process.extractOne(song_name_lower, filtered_spotify_data['song_name'].str.lower())
-    print("Matching song:", matching_song)
+    #print("Matching song:", matching_song)
     if matching_song and matching_song[1] >= 90:  # Adjust the threshold as needed
         song_features = filtered_spotify_data[filtered_spotify_data['song_name'].str.lower() == matching_song[0]]
         return song_features.iloc[0][['danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo']]
