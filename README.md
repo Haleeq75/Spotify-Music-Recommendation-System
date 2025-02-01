@@ -5,12 +5,12 @@ This Python program is designed to recommend songs based on user input using the
 
 ## Installaltion:
 Install Dependencies: Ensure that the required packages are installed by running the following commands:
-
+```
 %pip install pandas
 %pip install -U scikit-learn
 %pip install fuzzywuzzy
 %pip install fuzzywuzzy[speedup]
-
+```
 ## Process
 The steps involved in the process are listed below
   **1.Import Dataset:** Import the suitable dataset into the program. The current implementation loads the dataset from a CSV file named "genres_v2.csv". Adjust the file path accordingly to load your dataset.
